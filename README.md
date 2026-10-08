@@ -1,4 +1,4 @@
-# TaskFlow v0 — TP1
+# TaskFlow v1 — TP2
 
 Liste de tâches typée en React + TypeScript (Vite), sans serveur.
 
@@ -7,8 +7,12 @@ npm install
 npm run dev   → http://localhost:5173
 
 ## Fonctionnalités
-- Ajouter une tâche (bouton désactivé si vide, erreur au-delà de 80 caractères)
-- Cliquer sur le statut : À faire → En cours → Terminé
-- Supprimer une tâche (✕)
-- Filtrer : Toutes / À faire / En cours / Terminées
-- Compteur de tâches restantes
+TP1 : ajout, statut cliquable, suppression, filtres, compteur.
+
+TP2 :
+- Tâches sauvegardées dans le localStorage (hook useLocalStorage)
+- Titre de l'onglet « (n) TaskFlow » (useEffect)
+- Focus automatique dans le champ (useRef)
+- Choix de la priorité Haute / Moyenne / Basse
+- Minuteur de concentration 25 min (setInterval + nettoyage)
+- Thème clair / sombre mémorisé (ThemeContext)
