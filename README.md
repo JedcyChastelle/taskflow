@@ -1,18 +1,18 @@
-# TaskFlow v1 — TP2
+# TaskFlow — TP3 (multi-pages + API)
 
-Liste de tâches typée en React + TypeScript (Vite), sans serveur.
+Gestion de projets et de tâches en React + TypeScript (Vite), React Router et json-server.
 
-## Lancer le projet
+## Installation
 npm install
-npm run dev   → http://localhost:5173
 
-## Fonctionnalités
-TP1 : ajout, statut cliquable, suppression, filtres, compteur.
+## Lancement
+npm run dev        → lance l'API (http://localhost:3001) ET le site (http://localhost:5173)
+npm run reset-db   → remet db.json dans son état initial (copie de db.seed.json)
+npm run build      → vérification TypeScript + build de production
 
-TP2 :
-- Tâches sauvegardées dans le localStorage (hook useLocalStorage)
-- Titre de l'onglet « (n) TaskFlow » (useEffect)
-- Focus automatique dans le champ (useRef)
-- Choix de la priorité Haute / Moyenne / Basse
-- Minuteur de concentration 25 min (setInterval + nettoyage)
-- Thème clair / sombre mémorisé (ThemeContext)
+## Pages
+- `/` : liste des projets (chargés depuis l'API, avec le nombre de tâches terminées)
+- `/projects/:id` : un projet et ses tâches (ajout, statut, suppression enregistrés dans db.json)
+- `/projects/new` : création de projet validée, puis redirection vers le projet
+- `/about` : à propos + minuteur de concentration
+- toute autre adresse ou projet inexistant : page 404

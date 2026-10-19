@@ -1,0 +1,21 @@
+{
+  "projects": [
+    {
+      "id": "site-esiee",
+      "name": "Refonte site ESIEE-IT",
+      "description": "Nouvelle vitrine pour la rentrée."
+    },
+    {
+      "id": "app-bde",
+      "name": "Application mobile BDE",
+      "description": "Billetterie et agenda des soirées étudiantes."
+    }
+  ],
+  "tasks": [
+    { "id": "t1", "projectId": "site-esiee", "title": "Maquettes validées", "status": "done", "priority": 1 },
+    { "id": "t2", "projectId": "site-esiee", "title": "Page formations", "status": "doing", "priority": 1 },
+    { "id": "t3", "projectId": "site-esiee", "title": "Formulaire de contact", "status": "todo", "priority": 2 },
+    { "id": "t4", "projectId": "app-bde", "title": "Choisir le framework mobile", "status": "done", "priority": 1 },
+    { "id": "t5", "projectId": "app-bde", "title": "Écran billetterie", "status": "todo", "priority": 2 }
+  ]
+}
