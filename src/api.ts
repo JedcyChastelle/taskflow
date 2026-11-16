@@ -1,7 +1,7 @@
 import type { NewProject, NewTask, Project, ProjectWithTasks, Task } from "./types";
 
-// L'adresse de json-server, écrite une seule fois
-const API_URL = "http://localhost:3001";
+// Adresse de l'API : VITE_API_URL en ligne, sinon json-server local
+const API_URL = import.meta.env.VITE_API_URL ?? "http://localhost:3001";
 
 // Une erreur qui garde le code HTTP (pour reconnaître un 404)
 export class ApiError extends Error {
